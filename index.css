@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url(./g.jpg);
+  background-size: cover;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  padding-bottom: 100px;
+  color: white;
+  transition: all 0.3s ease;
+  letter-spacing: 10px;
+  font-size: 8em;
+}
+
+.bouncing-text:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  65% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  80% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  65% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  80% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.text {
+  height: 90vh;
+  text-align: center;
+}
+
+td {
+  border-radius: 8px;
+  width: 97px;
+  transition: transform 0.2s;
+}
+
+td:hover {
+  transform: scale(1.5);
+}
+
+.B {
+  padding-left: 202px;
+}
+
+.NM {
+  background-color: #4fee0e;
+  border: 1px solid #4fee0e;
+}
+
+.EM {
+  background-color: #e0b0ff;
+  border: 1px SOLID #e0b0ff;
+}
+
+.Lanthanides {
+  background-color: #03adf9;
+  border: 1px SOLID #03adf9;
+}
+
+.NG {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid lightgoldenrodyellow;
+}
+
+.TM {
+  background-color: #ffbc00;
+  border: 1px solid #ffbc00;
+}
+
+.Actinides {
+  background-color: #abc4ff;
+  border: 1px solid #abc4ff;
+}
+
+.UN {
+  background-color: #c0eafd;
+  border: 1px solid #c0eafd;
+}
+
+.ME {
+  background-color: #f07167;
+  border: 1px solid #f07167;
+}
+
+.AM {
+  background-color: #ff6000;
+  border: 1px sloid #ff6000;
+}
+
+.PT {
+  background-color: #96e6b3;
+  border: 1px sloid #96e6b3;
+}
+
+.hover {
+  background: rgba(112, 111, 111, 0.7);
+  color: white;
+  padding: 6px;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 102%;
+  transition: background 0.2s ease;
+  margin: 33px 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hover:hover,
+.hover:focus-within {
+  background: rgba(112, 111, 111, 0.7);
+}
+
+.hover input {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: none;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #9f9f9f;
+  box-shadow: inset 0 0 0 1.5px #9f9f9f;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  pointer-events: none;
+}
+
+.hover input:focus {
+  outline: none;
+}
+
+.hover input:checked {
+  box-shadow: inset 0 0 0 6px #6743ee;
+}
+
+.hover span {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 20px;
+  padding: 0 8px;
+}
+
+.active:hover {
+  transition: transform 0.2s;
+  transform: scale(1.5);
+}
